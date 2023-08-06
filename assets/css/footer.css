@@ -1,0 +1,18 @@
+.c-footer {
+    margin-top: 100px;
+}
+
+.c-footer__wrapper--top {
+    align-items: flex-start;
+    padding: 60px 140px;
+    background-color: var(--footer-bg-color);
+}
+
+.c-brand--footer {
+    width: 130px;
+    height: 130px;
+}
+
+.c-info__about {
+    font-size: 17px;
+}
