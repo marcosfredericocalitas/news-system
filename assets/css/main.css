@@ -32,6 +32,7 @@
     /* Transition */
     --primary-transition: all 250ms ease-in-out;
     --secondary-transition: all 80ms ease-in-out;
+    --hover-transition: all 150ms ease-in-out;
     /* Fonts */
     --nunito-sans-font: 'Nunito Sans', sans-serif;
     /* Scale */

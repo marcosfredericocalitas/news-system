@@ -11,3 +11,17 @@ function addClass(element1, element2, className) {
 addClass('btn-mobile', 'menu-mobile', 'is-open');
 addClass('btn-mobile', 'menu-searth', 'is-active');
 addClass('btn-mobile', 'top-navbar', 'is-active');
+
+// Scroll to top
+function scrollTop(buttom) {
+    let btn = document.getElementById(buttom);
+
+    btn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+scrollTop('scrol-top-btn');

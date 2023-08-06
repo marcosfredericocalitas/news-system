@@ -58,6 +58,7 @@
 .u-btn {
     border: none;
     background-color: var(--white);
+    cursor: pointer;
 }
 
 .u-shadow::before {

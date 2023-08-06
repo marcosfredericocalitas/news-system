@@ -5,25 +5,16 @@
 .c-header__wrapper {
     padding: var(--deskt-top-padding);
     background-color: var(--white);
-    transition: all 600ms ease-in-out;
+    transition: all 500ms ease-in-out;
     width: 100%;
 }
 
-/* Dinamic navbar START */
 .c-header__wrapper.is-fixed {
     position: fixed;
     top: -100%;
     opacity: 0;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.200);
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.200);
     z-index: 2;
-}
-
-.c-header__wrapper.is-fixed>.c-navbar {
-    border: none;
-}
-
-.c-header__wrapper.is-fixed>.c-top-navbar {
-    display: none;
 }
 
 .c-header__wrapper.is-visible {
@@ -31,9 +22,12 @@
     opacity: 1;
 }
 
-/* Dinamic navbar END */
 .c-top-navbar {
     padding: 14px 0px;
+}
+
+.c-top-navbar.is-none {
+    display: none;
 }
 
 .c-menu__list {
@@ -49,7 +43,7 @@
     position: relative;
     border-radius: 5px;
     background-color: var(--white);
-    transition: var(--secondary-transition);
+    transition: var(--hover-transition);
 }
 
 .c-menu__link--top {
@@ -69,6 +63,10 @@
 
 .c-bottom-navbar {
     padding: 10px 0px;
+}
+
+.c-bottom-navbar.has-no-border {
+    border: none;
 }
 
 .c-bottom-navbar__logo {
@@ -117,7 +115,7 @@
     border-radius: 7px 0px 0px 7px;
     border: 1px solid var(--gray-color);
     background-color: var(--searth__intup-bg);
-    transition: var(--secondary-transition);
+    transition: var(--hover-transition);
 }
 
 .c-search__btn {
@@ -126,7 +124,7 @@
     color: var(--white);
     background-color: var(--black);
     border-radius: 0px 7px 7px 0px;
-    transition: var(--secondary-transition);
+    transition: var(--hover-transition);
 }
 
 .c-search__btn:hover {
@@ -141,7 +139,7 @@
     font-size: 24px;
     padding: 9.5px 13px;
     border-radius: 7px;
-    transition: var(--secondary-transition);
+    transition: var(--hover-transition);
 }
 
 .c-mobile__btn:hover {
@@ -166,6 +164,15 @@
         z-index: 2;
     }
 
+    .c-header__wrapper.is-fixed {
+        top: 0;
+        opacity: 1;
+    }
+
+    .c-bottom-navbar.has-no-border {
+        border-bottom: 1px solid var(--gray-color);
+    }
+
     .c-bottom-navbar__logo {
         width: 70px;
         height: 70px;
@@ -184,6 +191,10 @@
 
     .c-menu--bottom.is-open {
         display: flex;
+    }
+
+    .c-menu--bottom.is-top {
+        top: 91px;
     }
 
     .c-menu__list--bottom {
@@ -224,6 +235,10 @@
         display: flex;
     }
 
+    .c-search.is-top {
+        top: 424px;
+    }
+
     .c-mobile {
         display: block;
     }
@@ -256,9 +271,11 @@
         padding: 6px 12px;
     }
 
-    .c-search {
+    .c-search,
+    .c-search.is-top {
         top: 404px;
     }
+
 }
 
 @media (max-width: 350px) {

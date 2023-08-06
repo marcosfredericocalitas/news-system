@@ -81,7 +81,7 @@
 @media (max-width:585px) {
     .news {
         grid-template-columns: 1fr;
-        gap: 80px;
+        gap: 70px;
     }
 
     .news___wrapper:nth-child(n + 3) {
