@@ -19,7 +19,7 @@
 }
 
 .c-about__logo {
-    --logo-dimention: 150px;
+    --logo-dimention: 135px;
     width: var(--logo-dimention);
     height: var(--logo-dimention);
 }
@@ -39,10 +39,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--footer-menu-gap);
-}
-
-.c-menu__item--footer {
-    width: 100%;
 }
 
 .c-menu__link--footer {
