@@ -2,14 +2,14 @@
     --moblie-menu-animation: 800ms scrollTop forwards;
 }
 
-.c-header__wrapper {
+.c-navbar {
     padding: var(--deskt-top-padding);
     background-color: var(--white);
     transition: all 500ms ease-in-out;
     width: 100%;
 }
 
-.c-header__wrapper.is-fixed {
+.c-navbar.is-fixed {
     position: fixed;
     top: -100%;
     opacity: 0;
@@ -17,16 +17,16 @@
     z-index: 2;
 }
 
-.c-header__wrapper.is-visible {
+.c-navbar.is-visible {
     top: 0;
     opacity: 1;
 }
 
-.c-top-navbar {
+.c-navbar__top {
     padding: 14px 0px;
 }
 
-.c-top-navbar.is-none {
+.c-navbar__top.is-none {
     display: none;
 }
 
@@ -55,21 +55,21 @@
     padding: 5px 8px;
 }
 
-.c-bottom-navbar {
+.c-navbar__bottom {
     padding: 10px 0px;
 }
 
-.c-bottom-navbar.has-no-border {
+.c-navbar__bottom.has-no-border {
     border: none;
 }
 
-.c-bottom-navbar__logo {
+.c-navbar__logo {
     --logo-dimention: 90px;
     width: var(--logo-dimention);
     height: var(--logo-dimention);
 }
 
-.c-bottom-navbar__logo.is-small {
+.c-navbar__logo.is-small {
     --logo-dimention-small: 70px;
     width: var(--logo-dimention-small);
     height: var(--logo-dimention-small);
@@ -145,29 +145,29 @@
 }
 
 @media (max-width: 1250px) {
-    .c-header__wrapper {
+    .c-navbar {
         padding: var(--deskt-top-padding2);
     }
 }
 
 @media (max-width: 1050px) {
-    .c-header__wrapper {
+    .c-navbar {
         position: fixed;
         padding: var(--mobile-padding);
         top: 0;
         z-index: 2;
     }
 
-    .c-header__wrapper.is-fixed {
+    .c-navbar.is-fixed {
         top: 0;
         opacity: 1;
     }
 
-    .c-bottom-navbar.has-no-border {
+    .c-navbar__bottom.has-no-border {
         border-bottom: 1px solid var(--gray-color);
     }
 
-    .c-bottom-navbar__logo {
+    .c-navbar__logo {
         width: 70px;
         height: 70px;
     }
@@ -239,7 +239,7 @@
 }
 
 @media (max-width:450px) {
-    .c-top-navbar {
+    .c-navbar__top {
         display: none;
         position: absolute;
         top: 650px;
@@ -253,7 +253,7 @@
         gap: 20px;
     }
 
-    .c-top-navbar.is-active {
+    .c-navbar__top.is-active {
         display: flex;
     }
 
@@ -273,7 +273,7 @@
 }
 
 @media (max-width: 350px) {
-    .c-top-navbar {
+    .c-navbar__top {
         top: 488px;
         flex-direction: row;
     }

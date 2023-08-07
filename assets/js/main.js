@@ -24,4 +24,4 @@ function scrollTop(buttom) {
     });
 }
 
-scrollTop('scrol-top-btn');
+scrollTop('btn-scroll-top');

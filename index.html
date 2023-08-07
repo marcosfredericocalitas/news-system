@@ -18,9 +18,9 @@
 <body>
 
     <header class="c-header">
-        <div class="c-header__wrapper u-d-flex-colum" id="header">
+        <div class="c-navbar u-d-flex-colum" id="navbar">
             <!-- Navbar top -->
-            <div class="c-top-navbar u-d-flex-between u-border-bottom" id="top-navbar">
+            <div class="c-navbar__top u-d-flex-between u-border-bottom" id="top-navbar">
                 <!-- Menu Top -->
                 <nav class="c-menu">
                     <ul class="c-menu__list c-menu__list--top u-d-flex">
@@ -59,11 +59,11 @@
             </div>
 
             <!-- Navbar bottom -->
-            <div class="c-bottom-navbar u-d-flex-between u-border-bottom" id="bottom-navbar">
+            <div class="c-navbar__bottom u-d-flex-between u-border-bottom" id="bottom-navbar">
                 <!-- Navbar logo -->
-                <div class="c-bottom-navbar__logo" id="menu-logo">
+                <div class="c-navbar__logo" id="menu-logo">
                     <a href="">
-                        <img src="assets/img/Logitipo.png" alt="" class="u-img c-bottom-navbar__img">
+                        <img src="assets/img/Logitipo.png" alt="" class="u-img c-navbar__img">
                     </a>
                 </div>
 
@@ -851,8 +851,9 @@
         </div>
     </div>
 
-    <div class="scroll-top" id="scrol-top-btn">
-        <button type="button" class="u-btn scroll-top__btn u-white u-btn-hover" title="Ir para o topo">
+    <div class="scroll-top">
+        <button type="button" class="u-btn scroll-top__btn u-white u-btn-hover" id="btn-scroll-top"
+            title="Ir para o topo">
             <i class="fa-solid fa-arrow-up"></i>
         </button>
     </div>
