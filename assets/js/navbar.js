@@ -1,5 +1,5 @@
-//Dinamic navbar 
-function fixedNavbar() {
+//Add classes by scroll 
+function addClassByScroll() {
     const header = document.getElementById('header');
     const topNavbar = document.getElementById('top-navbar');
     const bottomNvabar = document.getElementById('bottom-navbar');
@@ -24,4 +24,4 @@ function fixedNavbar() {
     scrolTopBtn.classList.toggle('is-visible', scroll400)
 }
 
-window.addEventListener('scroll', fixedNavbar);
+window.addEventListener('scroll', addClassByScroll);

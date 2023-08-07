@@ -30,11 +30,6 @@
     display: none;
 }
 
-.c-menu__list {
-    display: flex;
-    align-items: center;
-}
-
 .c-menu__list--top {
     gap: 15px;
 }
@@ -42,7 +37,6 @@
 .c-menu__link {
     position: relative;
     border-radius: 5px;
-    background-color: var(--white);
     transition: var(--hover-transition);
 }
 
@@ -120,7 +114,7 @@
 
 .c-search__btn {
     font-size: 18px;
-    padding: 9.4px 16px;
+    padding: 9.3px 16px;
     color: var(--white);
     background-color: var(--black);
     border-radius: 0px 7px 7px 0px;

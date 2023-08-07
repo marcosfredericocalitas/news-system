@@ -1,7 +1,6 @@
 /* Display flex */
 .u-d-flex {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -87,6 +86,14 @@
 
 .u-black {
     color: var(--black);
+}
+
+.u-25px {
+    font-size: 25px;
+}
+
+.u-gap-20px {
+    gap: 20px;
 }
 
 .u-category {

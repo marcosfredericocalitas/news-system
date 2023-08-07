@@ -157,11 +157,12 @@
 
 .scroll-top__btn {
     --btn-dimention: 60px;
+    --btn-top-bg: rgba(0, 0, 0, 0.400);
     width: var(--btn-dimention);
     height: var(--btn-dimention);
-    font-size: 25px;
+    font-size: 21px;
     border-radius: 100px;
-    background-color: var(--black);
+    background-color: var(--btn-top-bg);
     transition: var(--hover-transition);
 }
 
@@ -206,9 +207,10 @@
 
 @media (max-width: 585px) {
     .scroll-top__btn {
-        --btn-dimention: 55px;
+        --btn-dimention: 50px;
         width: var(--btn-dimention);
         height: var(--btn-dimention);
+        font-size: 20px;
     }
 }
 
