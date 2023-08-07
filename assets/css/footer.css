@@ -1,0 +1,43 @@
+.c-footer {
+    margin-top: 100px;
+}
+
+.c-footer__wrapper {
+    width: 100%;
+}
+
+.c-footer-top {
+    padding: 60px 140px;
+    background-color: var(--footer-bg-color);
+    align-items: baseline;
+}
+
+.c-about {
+    align-items: end;
+    gap: 35px;
+}
+
+.c-about__info {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.c-about__logo {
+    --logo-dimention: 150px;
+    width: var(--logo-dimention);
+    height: var(--logo-dimention);
+}
+
+.c-menu__list--footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.c-menu__link--footer {
+    font-size: 16px;
+}
+
+.c-menu__link--footer:hover {
+    color: var(--primary-color);
+}
