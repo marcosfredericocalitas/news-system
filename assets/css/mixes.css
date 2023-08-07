@@ -21,6 +21,10 @@
     background-color: var(--primary-color);
 }
 
+.u-gap-20 {
+    gap: 20px;
+}
+
 .u-input--focus:focus {
     border: 1px solid var(--primary-color);
 }
